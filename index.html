@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <div class="profile">
+          <img src="./images/avatar.png" alt="profile-pic" class="avatar" />
+          <div class="profile-desc">
+            <h4>Lost In Listening</h4>
+            <p class="profile-para">Pro member</p>
+          </div>
+        </div>
+        <div class="libraries">
+          <div class="library-img">
+            <i class="fas fa-book"></i>
+            <h2 class="library-desc">My playlist</h2>
+          </div>
+          <div class="songs">
+            <div class="song">
+              <h3 class="./images/walker.jpg" data-track="0" id="Alan">
+                Fake a smile
+              </h3>
+              <p>Alan Walker</p>
+            </div>
+            <div class="song">
+              <h3 class="./images/kygo.jpg" data-track="1" id="Kygo">
+                Stranger Things
+              </h3>
+              <p>Kygo</p>
+            </div>
+            <div class="song">
+              <h3 class="./images/burnout.jpg" data-track="2" id="fly-high">
+                Fly High
+              </h3>
+              <p>Burn out syndromes</p>
+            </div>
+            <div class="song">
+              <h3 class="./images/kanaboon.jpg" data-track="3" id="Silhouette">
+                Silhouette
+              </h3>
+              <p>KanaBoon</p>
+            </div>
+            <div class="song">
+              <h3 class="./images/nico.jpg" data-track="4" id="broken-youth">
+                Broken youth
+              </h3>
+              <p>Nico touches the walls</p>
+            </div>
+            <div class="song">
+              <h3 class="./images/avicii.jpg" data-track="5" id="FadesAway">
+                Fades Away
+              </h3>
+              <p>Avicii</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <h1>Let the <span>MUSIC</span> play</h1>
+        <p class="song-artist"></p>
+        <img class="cover" src="./images/cover.jpg" alt="" />
+        <input class="level" type="range" ud="range" min="0" value="0" />
+        <div class="buttons">
+          <button id="pre"><i class="fas fa-backward"></i></button>
+          <button id="play"><i class="fas fa-play"></i></button>
+          <button id="forward"><i class="fas fa-forward"></i></button>
+        </div>
+      </div>
+      <audio id="audio" src=""></audio>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
